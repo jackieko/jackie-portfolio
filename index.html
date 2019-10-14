@@ -2,51 +2,80 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackie Ko</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Work+Sans:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/d1bbece7cd.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <header class="nav-bar">
-      <div class="logo">
-        <img src="images/jko-logo.png">
-      </div>
-      <nav>
-        <a href="project.html">projects</a>
-        <a href="#">bio</a>
-        <a href="#">resume</a>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <!--hero unit-->
-        <section class="hero">
-          <p> Hey there!— I’m Jackie, a product designer passionate about creating effective user experiences.</p>
-        </section>
-        <!--case studies-->
-        <section class="content-card">
-          <div class="content-card-left">
-            <div class="content-card-info">
-              <h1>Jupiter</h1>
-              <p>A cloud storage platform app that has sharing, collaborating, and editing functionalities.</p>
-              <button type="button" name="button">View Case Study</button>
-            </div>
-            <div class="content-card-right">
-              <img src="images/jupiter-preview.png">
-            </div>
+    <div class="container">
+      <header class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><img src="images/jko.svg"></a>
+        </div>
+        <div class="mobile">
+          <img src="images/hamburger-icon.png" alt="">
+        </div>
+        <nav class="desktop">
+          <ul>
+            <li><a href="project.html">projects</a></li>
+            <li><a href="#">bio</a></li>
+            <li><a href="#">resume</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--hero unit-->
+      <section class="hero">
+        <h1> Hey there!—</br>I’m Jackie, a <span style="color:#006965; font-weight: 700">product designer</span> passionate about creating effective user experiences.</h1>
+      </section>
+      <!--case studies-->
+      <section class="projects">
+        <section class="project" style="background-color: #F1F2F7">
+          <div class="project-info">
+            <h2>Jupiter</h2>
+            <p>A cloud storage platform app that has sharing, collaborating, and editing functionalities.</p>
+            <button type="button" name="button">View Case Study</button>
+          </div>
+          <div class="project-image">
+            <a href="project.html"><img src="images/jupiter-card.png"></a>
           </div>
         </section>
-        <!--End of case studies-->
-      </div>
-    </main>
-    <footer>
-      <h1>Let's Connect</h1>
-      <div class="social-container">
-        <a href="">Linkedin</a>
-        <a href="#">Email</a>
-        <a href="#">Github</a>
-      </div>
-    </footer>
+        <section class="project" style="background-color: #FFF8D3">
+          <div class="project-info">
+            <h2>BusyBus</h2>
+            <p>sample text here</p>
+            <button type="button" name="button">View Case Study</button>
+          </div>
+          <div class="project-image">
+            <img src="images/busybus-card.png">
+          </div>
+        </section>
+      </section>
+      <!--End of case studies-->
+      <footer>
+        <h3>Let's Connect</h3>
+        <ul class="social">
+          <li>
+            <a href="https://www.linkedin.com/in/jackie-ko-77b694ba/">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jackie.ko95@gmail.com">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+            <a href="https://github.com/jackieko">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div> <!--End of .container-->
   </body>
 </html>
