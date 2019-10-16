@@ -71,22 +71,51 @@ h4 {
     "footer footer footer";
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "image"
+    "bio"
+    "footer";
+}
+
 /* Navigation Styles */
 .nav-bar {
   display: flex;
-  margin: 3rem;
+  margin: 3rem 3rem 1rem 3rem;
   text-align: center;
 }
 
 .logo {
   flex-grow: 1;
+  margin: 0 2rem;
   padding-left: 2rem;
-  width: 20%;
+  /* transition: all 2s; */
+  width: auto;
 }
 
-.desktop {
-  font-size: 1.6rem;
-  padding: 3rem;
+.logo img {
+  margin: 0 auto;
+  max-height: 150px;
+  max-width: 18%;
+  object-fit: contain;
+  /* transition: all 2s; */
+  width: auto;
+}
+
+.desktop ul {
+  display: flex;
+  margin: 0 2rem;
+}
+
+.desktop a {
+  color: black;
+  display: flex;
+  font-size: 1.7rem;
+  text-decoration: none;
+  margin: 2rem 4rem;
 }
 
 .hero {
@@ -94,7 +123,7 @@ h4 {
   grid-area: hero;
   justify-content: center;
   margin-bottom: 4rem;
-  padding: 30px 1rem;
+  padding: 20px 1rem;
   width: 100%
 }
 
@@ -165,6 +194,29 @@ h4 {
     padding-top: 2rem;
 }
 
+.bio-img {
+    max-width: 100%;
+    width: auto;
+    max-height: 600px;
+    margin: 0px auto;
+    object-fit: contain;
+    padding-top: 2rem;
+}
+
+.bio-intro {
+  grid-area: bio;
+  margin: 0 3rem;
+}
+
+.about-image {
+  grid-area: image;
+  margin: 0 3rem 3rem 3rem;
+}
+
+ a:hover, .button a:hover {
+  color: #006965;
+}
+
 footer {
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 2rem;
@@ -205,8 +257,20 @@ i.fab, i.far {
       "footer footer footer footer footer";
   }
 
+  .logo img {
+    margin: 2rem auto;
+  }
+
   .small-img {
     padding: 1rem 0;
+  }
+
+  .bio-intro {
+    margin: 2rem 11rem;
+  }
+
+  .about-image {
+    text-align: center;
   }
 
   .hero h1{
@@ -215,8 +279,16 @@ i.fab, i.far {
     margin: 12rem 0;
   }
 
-  .project, .hero-project {
+  .project {
     height: 700px;
+  }
+
+  .hero-project {
+    height: auto;
+  }
+
+  .project-image img {
+    width: 100%;
   }
 }
 
@@ -227,11 +299,71 @@ i.fab, i.far {
     /* text-align: right; */
   }
 
+  .about-container {
+    display: grid;
+    grid-template-columns: 10% 30% 3% 40% 17%;
+    grid-template-areas:
+      "header header header header header"
+      ". image . bio ."
+      "footer footer footer footer footer";
+  }
+
+  .bio-intro {
+    margin: 5rem;
+  }
+
+  .bio-img {
+    margin: 6rem 0;
+  }
+
   .nav-bar {
     text-align: left;
   }
 
   .mobile {
     display: none;
+  }
+
+  .project {
+    display: flex;
+  }
+
+  .project-image {
+    display: block;
+    width: 900px;
+  }
+
+  .project-info {
+    display: block;
+    height: auto;
+    line-height: 3.8rem;
+    padding: 12% 0 12% 10%;
+    position: relative;
+    width: 40%;
+  }
+
+  .project-info h2 {
+    font-size: 4rem;
+    line-height: 7rem;
+    padding: 1rem 0;
+  }
+
+  .button {
+    margin: 2rem 0;
+  }
+
+  .button a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .project-content-card-main {
+    width: 57%;
+  }
+
+  .project-content-card-aside {
+    padding-left: 5%;
+    width: 35%;
   }
 }
