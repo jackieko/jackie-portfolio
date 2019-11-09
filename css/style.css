@@ -46,11 +46,6 @@ h4 {
   text-transform: uppercase;
 }
 
-.feedback li {
-  list-style-type:circle;
-  margin: 0 3rem;
-}
-
 .container {
   display: grid;
   grid-template-columns: 8% 84% 8%;
@@ -79,6 +74,11 @@ h4 {
     "image"
     "bio"
     "footer";
+}
+
+.feedback li {
+  list-style-type:circle;
+  margin: 0 3rem;
 }
 
 /* Navigation Styles */
@@ -121,9 +121,10 @@ h4 {
 .hero {
   font-size: 3.2px;
   grid-area: hero;
+  height: auto;
   justify-content: center;
   margin-bottom: 4rem;
-  padding: 20px 1rem;
+  padding: 40px 1rem;
   width: 100%
 }
 
@@ -144,9 +145,8 @@ h4 {
 }
 
 .hero-title {
-  font-size: 4
   font-weight: 700;
-  padding: 3.5rem 0;
+  padding: 2.4rem 0;
   text-align: center;
 }
 
@@ -176,13 +176,18 @@ h4 {
   padding: 2rem 0;
 }
 
+.brand-mission {
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
 .small-img {
-    max-width: 100%;
-    width: auto;
-    max-height: 700px;
     margin: 0px auto;
+    max-height: auto;
+    max-width: 100%;
     object-fit: contain;
     padding-top: 2rem;
+    width: auto;
 }
 
 .big-img {
@@ -279,6 +284,11 @@ i.fab, i.far {
     margin: 12rem 0;
   }
 
+  .hero-title h1 {
+    font-size: 4.4rem;
+    padding: 4rem 0;
+  }
+
   .project {
     height: 700px;
   }
@@ -330,22 +340,24 @@ i.fab, i.far {
 
   .project-image {
     display: block;
-    width: 900px;
+    height: 100%;
+    width: auto;
   }
 
   .project-info {
     display: block;
-    height: auto;
+    height: 100%;
     line-height: 3.8rem;
-    padding: 12% 0 12% 10%;
+    max-width: 700px;
+    padding: 10% 0 10% 14%;
     position: relative;
-    width: 40%;
+    width: auto;
   }
 
   .project-info h2 {
-    font-size: 4rem;
-    line-height: 7rem;
-    padding: 1rem 0;
+    font-size: 4.8rem;
+    line-height: 10rem;
+    padding: 1.5rem 0;
   }
 
   .button {
@@ -354,6 +366,7 @@ i.fab, i.far {
 
   .button a {
     color: black;
+    font-size: 2.0rem;
     font-weight: 500;
     text-decoration: none;
   }
