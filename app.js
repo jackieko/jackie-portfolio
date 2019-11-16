@@ -8,11 +8,9 @@ $(document).ready(function(){
 $('.close').on('click', function() {
   $(".overlay").fadeToggle(200);
   $('#nav-icon3').toggleClass('open').toggleClass('close');
-  open = false;
 })
 
 $('#overlay-btn').on('click', function() {
   $(".overlay").fadeToggle(200);
   $('#nav-icon3').toggleClass('open').toggleClass('close');
-  open = false;
 })
