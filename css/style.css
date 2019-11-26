@@ -39,11 +39,15 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h4 {
+h4, h5{
   color: #747474;
   font-weight: 500;
   padding: 2rem 0 0.5rem 0;
   text-transform: uppercase;
+}
+
+h4 {
+  padding: 2rem 0;
 }
 
 .container {
@@ -295,7 +299,11 @@ h4 {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 3rem 0;
+}
+
+.project-content-step {
+  padding: 3rem 0;
 }
 
 .brand-mission {
@@ -304,11 +312,11 @@ h4 {
 }
 
 .small-img {
-    margin: 0px auto;
+    /* margin: 0px auto; */
     max-height: auto;
     max-width: 100%;
     object-fit: contain;
-    padding-top: 2rem;
+    margin-top: 2rem;
     width: auto;
 }
 
@@ -316,9 +324,9 @@ h4 {
     max-width: 100%;
     width: auto;
     max-height: 4000px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     object-fit: contain;
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 .bio-img {
@@ -338,6 +346,11 @@ h4 {
 .about-image {
   grid-area: image;
   margin: 0 3rem 3rem 3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
  a:hover, .button a:hover {
@@ -376,12 +389,16 @@ i.fab, i.far {
 
   .project-container {
     display: grid;
-    grid-template-columns: 3% 17% 60% 17% 3%;
+    grid-template-columns: 5% 20% 50% 20% 5%;
     grid-template-areas:
       "header header header header header"
       ". . project . ."
       ". . content . ."
       "footer footer footer footer footer";
+  }
+
+  h4 {
+    font-size: 1.8rem;
   }
 
   .logo img {
@@ -395,6 +412,11 @@ i.fab, i.far {
 
   .small-img {
     padding: 1rem 0;
+  }
+
+  .persona {
+      width: 42%;
+      padding-top: 3%;
   }
 
   .bio-intro {
