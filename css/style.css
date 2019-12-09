@@ -39,7 +39,7 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h4, h5{
+h4, aside h3{
   color: #747474;
   font-weight: 500;
   padding: 2rem 0 0.5rem 0;
@@ -48,6 +48,10 @@ h4, h5{
 
 h4 {
   padding: 2rem 0;
+}
+
+p {
+  padding-bottom: 1rem;
 }
 
 .container {
@@ -80,9 +84,13 @@ h4 {
     "footer";
 }
 
+.feedback p {
+  padding-bottom: 10px;
+}
+
 .feedback li {
   list-style-type:circle;
-  margin: 0 3rem;
+  margin: 0 2rem 0 5rem;
 }
 
 /* Navigation Styles */
@@ -230,6 +238,10 @@ h4 {
 }
 /* End of Mobile Hamburger */
 
+li.active a {
+  color: #006965;
+}
+
 .desktop ul {
   display: flex;
   margin: 0 2rem;
@@ -245,13 +257,31 @@ h4 {
 /* End of Navigation */
 
 .hero {
-  font-size: 3.2px;
+  font-size: 3.2rem;
   grid-area: hero;
   height: auto;
   justify-content: center;
   margin-bottom: 4rem;
-  padding: 40px 1rem;
+  padding: 80px 1rem;
   width: 100%
+}
+
+button {
+  /* border: none; */
+  border-color: #161925;
+  border-radius: 30px;
+  border-width: 2px;
+  background-color: #F1F2F7;
+  margin: 20px 0;
+  width: 250px;
+  height: 55px;
+}
+
+button:hover{
+  /* background-color: #d8e5e4; */
+  background-color:#161925;
+  /* border-color: #006965; */
+  transition: all 0.3s ease-in-out;
 }
 
 .projects {
@@ -263,6 +293,10 @@ h4 {
   font-size: 1.8rem;
   grid-area: project;
   width: 100%;
+}
+
+.project-hero-image {
+  margin: 0 -10vw;
 }
 
 .hero-project h1 {
@@ -305,13 +339,19 @@ h4 {
   padding: 3rem 0;
 }
 
+.project-card-image {
+  margin: 0 -10vw;
+}
+
 .brand-mission {
-  font-size: 1.3rem;
-  padding: 2rem;
+  padding: 0;
+  margin: 5rem -5vw;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .small-img {
-    /* margin: 0px auto; */
     max-width: 100%;
     object-fit: contain;
     margin-top: 2rem;
@@ -341,6 +381,12 @@ h4 {
   margin: 0 3rem;
 }
 
+.bio-intro a, .project-content-step a {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-position: under
+}
+
 .about-image {
   grid-area: image;
   margin: 0 3rem 3rem 3rem;
@@ -351,9 +397,13 @@ a {
   text-decoration: none;
 }
 
- a:hover, .button a:hover {
+ a:hover {
   color: #006965;
 }
+
+ .button a:hover {
+   color: white;
+ }
 
 #backtotop {
   display: none;
@@ -370,9 +420,13 @@ footer {
   font-size: 2rem;
   font-weight: 400;
   grid-area: footer;
-  margin: 3rem;
+  margin: 6rem 0 3rem 0;
   padding: 3rem 0;
   text-align: center;
+}
+
+footer h1 {
+  padding-bottom: 20px;
 }
 
 .social {
@@ -382,7 +436,7 @@ footer {
 
 i.fab, i.far {
   color: #292828;
-  padding: 1.5rem .75rem;
+  padding: 1.5rem 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -402,7 +456,7 @@ i.fab, i.far {
       "header header header header header"
       ". . project . ."
       ". . content . ."
-      "footer footer footer footer footer";
+      ". . footer . .";
   }
 
   h4 {
@@ -436,9 +490,9 @@ i.fab, i.far {
   }
 
   .hero h1{
-    font-size: 3.8rem;
+    font-size: 4rem;
     line-height: 5.4rem;
-    margin: 12rem 0;
+    margin: 0;
   }
 
   .hero-title h1 {
@@ -456,6 +510,18 @@ i.fab, i.far {
 
   .project-image img {
     width: 100%;
+  }
+
+  .wireframe-imgs{
+    display: flex;
+    margin: 0 -10vw;
+    width: 100%;
+  }
+
+  .wireframe-imgs img{
+    align-items: flex-start;
+    padding: 0 10px;
+    width: 70%;
   }
 }
 
@@ -491,6 +557,14 @@ i.fab, i.far {
     display: none;
   }
 
+  .persona-imgs {
+    text-align: center;
+  }
+
+  .persona-imgs img {
+    padding: 0 10px;
+  }
+
   .project {
     display: flex;
   }
@@ -518,13 +592,13 @@ i.fab, i.far {
   }
 
   .button {
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 
   .button a {
     color: black;
-    font-size: 2.0rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 400;
     text-decoration: none;
   }
 
@@ -535,5 +609,14 @@ i.fab, i.far {
   .project-content-card-aside {
     padding-left: 5%;
     width: 35%;
+  }
+
+  .project-hero-image {
+    margin: 0 -15vw;
+    margin: 0 -15vw;
+  }
+
+  .project-card-image {
+    margin: 0 -15vw;
   }
 }

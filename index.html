@@ -12,6 +12,8 @@
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/d1bbece7cd.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -31,23 +33,24 @@
         <nav class="overlay">
           <div class="wrap">
             <ul class="wrap-nav">
-              <li><a href="#casestudy" id="overlay-btn">projects</a></li>
+              <li class="active"><a href="#casestudy" id="overlay-btn">projects</a></li>
               <li><a href="about.html">about</a></li>
-              <li><a href="Jackie Ko Resume.pdf" target="blank">resume</a></li>
+              <li><a href="JackieKo_Resume.pdf" target="blank">resume</a></li>
             </ul>
           </div>
         </nav>
         <nav class="desktop">
           <ul>
-            <li><a href="#casestudy">projects</a></li>
+            <li class="active"><a href="#casestudy">projects</a></li>
             <li><a href="about.html">about</a></li>
-            <li><a href="Jackie Ko Resume.pdf" target="blank">resume</a></li>
+            <li><a href="JackieKo_Resume.pdf" target="blank">resume</a></li>
           </ul>
         </nav>
       </header>
       <!--hero unit-->
       <section class="hero">
-        <h1> Hey there!—</br>I’m Jackie, a <span style="color:#006965; font-weight: 700">product designer</span> passionate about creating effective user experiences.</h1>
+        <h1> Hey there!—</h1>
+        <h1>I’m Jackie, a product designer passionate about creating effective user experiences.</h1>
       </section>
       <!--case studies-->
       <section class="projects" id="casestudy">
@@ -55,15 +58,15 @@
           <div class="project-info">
             <h2>Jupiter</h2>
             <p>A cloud storage platform app that has sharing, collaborating, and editing functionalities.</p>
-            <div class="button">
-              <a href="project.html"><p>View Case Study</p></a>
-            </div>
+            <button class="button">
+              <a href="project.html">View Case Study &#x2192;</a>
+            </button>
           </div>
           <div class="project-image">
             <a href="project.html"><img src="images/jupiter-card.png" alt="Jupiter Case Study"></a>
           </div>
         </section>
-        <section class="project" style="background-color: #FFF8D3">
+        <!-- <section class="project" style="background-color: #FFF8D3">
           <div class="project-info">
             <h2>BusyBus</h2>
             <p>A cloud storage platform app that has sharing, collaborating, and editing functionalities.</p>
@@ -72,13 +75,14 @@
             </div>
           </div>
           <div class="project-image">
-            <img src="images/busybus-card.png" alt="BusyBus Case Study"> 
+            <img src="images/busybus-card.png" alt="BusyBus Case Study">
           </div>
         </section>
-      </section>
+      </section> -->
       <!--End of case studies-->
       <footer>
-        <h3>Let's Connect</h3>
+        <h1>Interested in working together?</h1>
+        <h1>Let's Connect</h1>
         <ul class="social">
           <li>
             <a href="https://www.linkedin.com/in/jackie-ko-77b694ba/" target="blank">
@@ -86,7 +90,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:jackie.ko95@gmail.com">
+            <a href="mailto:jackie.ko95@gmail.com" target="blank">
               <i class="far fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
