@@ -36,7 +36,7 @@ h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 h4, aside h3{
@@ -51,7 +51,12 @@ h4 {
 }
 
 p {
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 10px 0 20px 60px;
 }
 
 .container {
@@ -279,7 +284,7 @@ button {
   border-color: #161925;
   border-radius: 30px;
   border-width: 2px;
-  background-color: #F1F2F7;
+  background-color: transparent;
   margin: 20px 0;
   width: 250px;
   height: 55px;
@@ -292,7 +297,6 @@ button:hover{
 
 .projects {
   grid-area: projects;
-  height: 100%;
 }
 
 .project, .hero-project {
@@ -301,9 +305,9 @@ button:hover{
   width: 100%;
 }
 
-/* .project-hero-image {
-  margin: 0 -10vw;
-} */
+.project-hero-image {
+  text-align: center;
+}
 
 .hero-project h1 {
   font-family: 'Libre Baskerville', sans-serif;
@@ -338,15 +342,13 @@ button:hover{
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  padding: 3rem 0;
-}
-
-.project-content-step {
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 .project-card-image {
-  margin: 0 -10vw;
+  margin-left: -10vw;
+  margin-right: -10vw;
+  text-align: center;
 }
 
 .brand-mission {
@@ -357,11 +359,23 @@ button:hover{
   line-height: 1.5;
 }
 
+.brand-logos {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.gif-img {
+    max-width: 100%;
+    object-fit: contain;
+    margin-top: 2rem;
+}
+
 .small-img {
     max-width: 100%;
     object-fit: contain;
     margin-top: 2rem;
-    width: auto;
+    height: auto;
 }
 
 .big-img {
@@ -396,6 +410,16 @@ button:hover{
 .about-image {
   grid-area: image;
   margin: 0 3rem 3rem 3rem;
+}
+
+.three-imgs {
+  margin: auto;
+  text-align: center;
+}
+
+iframe {
+  width: auto;
+  height: 320px;
 }
 
 a {
@@ -457,7 +481,7 @@ i.fab, i.far {
 
   .project-container {
     display: grid;
-    grid-template-columns: 5% 20% 50% 20% 5%;
+    grid-template-columns: 7% 20% 46% 20% 7%;
     grid-template-areas:
       "header header header header header"
       "project project project project project"
@@ -502,14 +526,6 @@ i.fab, i.far {
     line-height: 6rem;
   }
 
-  /* .hero-intro {
-    font-family: 'Libre Baskerville', serif;
-  }
-
-  .hero-intro h1 {
-    font-size: 7rem;
-  } */
-
   .hero-title h1 {
     font-size: 4.4rem;
     padding: 4rem 0;
@@ -527,16 +543,38 @@ i.fab, i.far {
     width: 100%;
   }
 
-  .wireframe-imgs{
+ .wireframe-imgs{
     display: flex;
     margin: 0 -10vw;
     width: 100%;
+
   }
 
   .wireframe-imgs img{
     align-items: flex-start;
     padding: 0 10px;
     width: 70%;
+  }
+
+  .three-imgs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .three-imgs img {
+    padding: 15px;
+    margin: 60px 0;
+  }
+
+  .video {
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .solution-list li {
+    list-style-type:circle;
+    margin: 0 2rem 0 5rem;
   }
 }
 
@@ -588,8 +626,17 @@ i.fab, i.far {
     text-align: center;
   }
 
+  .survey-imgs {
+    margin-right: -15vw;
+  }
+
   .persona-imgs img {
     padding: 0 10px;
+  }
+
+  .survey-imgs img {
+    padding: 20px 10px 60px 10px;
+    width: 42%;
   }
 
   .project {
@@ -629,7 +676,7 @@ i.fab, i.far {
   }
 
   .project-content-card-main {
-    width: 57%;
+    width: 65%;
   }
 
   .project-content-card-aside {
@@ -640,5 +687,20 @@ i.fab, i.far {
   .project-card-image {
     /* margin: 0 -15vw; */
     grid: projectimg;
+  }
+
+  iframe {
+    width: 560px;
+    height: 400px;
+  }
+
+  .gif-image {
+    text-align: center;
+  }
+
+  .solution-list li {
+    list-style-type:circle;
+    margin: 0 2rem 0 5rem;
+    padding: 1rem 0;
   }
 }

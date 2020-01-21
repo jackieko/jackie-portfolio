@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-a-Toasty | Jackie Ko</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Work+Sans:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery source code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/d1bbece7cd.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="project-container">
+      <header class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><img src="images/jko-logo.svg" alt="jko logo"></a>
+        </div>
+        <div class="mobile" id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- <img src="images/hamburger-icon.png" alt=""> -->
+        </div>
+        <!-- Navigation -->
+        <nav class="overlay">
+          <div class="wrap">
+            <ul class="wrap-nav">
+              <li><a href="index.html#casestudy">projects</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="JackieKo_Resume.pdf" target="blank">resume</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="desktop">
+          <ul>
+            <li><a href="index.html">projects</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="JackieKo_Resume.pdf" target="blank">resume</a></li>
+          </ul>
+        </nav>
+      </header>
+        <!--Hero Unit-->
+      <section class="hero-project">
+        <div class="hero-title">
+          <h1>Text-a-Toasty</h1>
+        </div>
+        <div class="project-hero-image">
+          <img src="images/tat/tat-hero.png" class="small-img" alt="Hero Image">
+        </div>
+      </section>
+      <!--Project Case Study-->
+      <section class="project-content-wrapper">
+        <article class="project-overview-section">
+          <div class="project-content-card">
+            <div class="project-content-card-main">
+              <h2>Project Overview</h2>
+              <p>Redesigned the Text-a-Toasty administrative system. Text-a-Toasty is a student led ministry associated with Grace Christian Fellowship at the University of Virginia. Their mission is to create opportunities for the church to interact with the world through listening, dialoguing, and sharing the Gospel to students on campus. In doing so, students can text whatever questions they have about Christianity, and the ministry members will respond with answers and a sandwich delivery to their dorm, library, or desired location!</p>
+            </div>
+            <aside class="project-content-card-aside">
+              <h3>Role</h3>
+              <p>Lead UX/Visual Designer</p>
+              <h3>Timeline</h3>
+              <p>Oct-Nov 2019</p>
+              <h3>Toolkit</h3>
+              <p>Figma, InVision, draw.io, Google Forms</p>
+            </aside>
+          </div>
+          <div class="project-content-card">
+            <h2>Problem</h2>
+            <p>The current administrative system for Text-a-Toasty members is organized in a way where members manually input information to Google sheets from text messages they receive. This created inefficiencies for leaders and ministry members as they spent more time organizing the data than carrying out their mission statement.</p>
+          </div>
+          <div class="project-card-image">
+            <img src="images/tat/problem-img.png" class="small-img" alt="Problem Card">
+          </div>
+          <div class="project-content-card">
+            <h2>Solution</h2>
+            <ul class="solution-list">
+              <li><span style="font-weight: 700;">Automated collecting data via autoresponders</span><p>Using autoresponders for text messages, students can continue asking questions via text and data will backlog to a database that will be serviced to internal users.</p></li>
+              <li><span style="font-weight: 700;">Connected a number of services in a mobile experience</span><p>Integrated screens for the regular admin/member, kitchen cook, and driver. Despite the complexity of these roles, a seamless experience for all internal Text-a-Toasty app users exists.</p></li>
+              <li><span style="font-weight: 700;">Eliminated unnecessary elements for more efficient communication</span><p>All internal users have access to the app; this means more time delivering and answering questions, and less time figuring out logistics.</p></li>
+            </ul>
+          </div>
+          <div class="gif-image">
+            <img src="images/tat/solution.gif" width=500 class="gif-img" alt="Solution Card">
+          </div>
+          <div class="project-content-card">
+            <h2>Process</h2>
+            <!--Start of Step by Step Processes-->
+            <div class="project-content-step">
+              <h4>User Research & Survey</h4>
+              <p>I first came across this project when my dear friend and leader of Text-a-Toasty expressed his frustrations with the multi-step process for this ministry. Since this project is incredibly specific and unique, I first conducted an interview with my friend to gain a better understanding of what this ministry was and what their backend administrative system looked like.</p>
+              <br>
+              <p style="font-weight: 700">The current TaT ecosystem:</p>
+              <ol style="padding-bottom: 1.6rem;">
+                <li><span style="font-weight: 700;">Google Sheets & Voice- </span>Only One phone number for which the admins had access to text conversations. Admins would directly respond to each person texting. Admin member would take the information within the google voice texts to manually input into an excel sheet so other members can see the master file of orders.</li>
+                <li><span style="font-weight: 700;">Day of toasty deliveries- </span>Members would gather at a leader’s house to all discuss and answer the questions asked within the past week.  Members project the Google sheet on a large screen to go over the questions as a group.</li>
+                <li><span style="font-weight: 700;">Sandwich maker- </span>A couple of designated members within the ministry would volunteer to make the sandwiches as orders came in. Printed out the Google sheet and split them row by row for each sandwich to create a “receipt” for each question/order.</li>
+                <li><span style="font-weight: 700;">Drivers delivering- </span>Groups of 2-4 members would get together to go make a delivery and answer a question. When the driver arrived at the location, they would contact an admin member so the admin could text the student the group arrived at the location. Once delivery was complete, the group would let the admin know and the admin would then mark the task as complete.</li>
+              </ol>
+              <p>After the interview, I found this system to be inefficient and convoluted. To understand other pain points in the program, I deployed a user survey specifically for members involved in the ministry.</p>
+              <p>One major takeaway from deploying the survey was that text messaging was the desired form of receiving orders.</p>
+              <figure class="survey-imgs">
+                <img src="images/tat/survey-1.png" class="small-img" alt="Survey Results">
+                <img src="images/tat/survey-2.png" class="small-img" alt="Survey Results">
+              </figure>
+              <p>Due to this, I had to brainstorm ways in which we could collect data from messages that were sent and received from students.</p>
+              <p>Survey respondents also said that they enjoyed the accessibility of the excel sheet on their mobile phones but that it was difficult scrolling through all the information that was in that large excel sheet.</p>
+            </div>
+            <br>
+            <div class="project-content-step">
+              <h4>User Flows</h4>
+              <p>After researching and understanding the user concerns, I created the journey of a "toasty." To simplify the complicated nature of the entire process, a user flow assisted me with organizing my top priority functionalities for the redesign:</p>
+              <ol style="font-weight: 500">
+                <li>Question submission process for external user</li>
+                <li>Onboarding for admin members</li>
+                <li>Sandwich Preparation</li>
+                <li>Order Delivery</li>
+                <li>Ending Trip</li>
+              </ol>
+              <div class="project-card-image">
+                <img src="images/tat/user-flow.png" class="small-img" alt="User Flow Sharing File">
+              </div>
+            </div>
+          </div>
+          <div class="project-content-card">
+            <h2>Design</h2>
+            <p>With the user flows in mind, I began to build out the rough sketches and wireframes for how the app would lay out so that the information architecture was simple and digestible. Throughout the initial sketches, I started to develop more details into the app as I started to think of other important factors for the MVP product.</p>
+            <figure class="three-imgs">
+              <img src="images/tat/wf-1.png" class="small-img" width="240px" alt="Wireframe 1">
+              <img src="images/tat/wf-2.png" class="small-img" width="240px" alt="Wireframe 2">
+              <img src="images/tat/wf-3.png" class="small-img" width="240px" alt="Wireframe 2">
+            </figure>
+            <p>After a number of iterations with the sketches and lo-fidelity wireframes, I started to develop a more robust brand and experience for the end user.</p>
+            <figure class="three-imgs">
+              <img src="images/tat/externaluser.png" class="small-img" width="240px" alt="Wireframe 1">
+            </figure>
+            <p>When external users text a keyword, an automatic response with questions is sent using chatbot technology. Answers are logged into a backend database, which then would show on a streamlined front-facing admin interface.</p>
+            <figure class="three-imgs">
+              <img src="images/tat/mainscreen-1.png" class="small-img" width="240px" alt="Wireframe 1">
+              <img src="images/tat/mainscreen-2.png" class="small-img" width="240px" alt="Wireframe 2">
+              <img src="images/tat/mainscreen-3.png" class="small-img" width="240px" alt="Wireframe 2">
+            </figure>
+            <p>The <span style="font-weight: 700">main ticket screen</span> takes the admin/member through the journey of completing and delivering a sandwich order. It display all the necessary information at-a-glance without cluttering the screen: <span style="font-weight: 500">Name, Delivery Status, Question, Destination, and Delivery Time.</span></p>
+            <p>The <span style="font-weight: 700">detailed ticket screen</span> displays more information regarding the order and driver’s have the ability to begin the delivery.</p>
+            <p>The <span style="font-weight: 700">delivery screen</span> displays a navigation system to reach the specified destination.</p>
+            <figure class="three-imgs">
+              <img src="images/tat/kitchen-1.png" class="small-img" width="240px" alt="Wireframe 1">
+              <img src="images/tat/kitchen-2.png" class="small-img" width="240px" alt="Wireframe 2">
+            </figure>
+            <p>The <span style="font-weight: 700">kitchen screen</span> displays all the total number of sandwiches at the top of the screen. The lower half of the screen shows the individual sandwiches organized by delivery times so the cook can easily see the next order.</p>
+            <p>A simple swipe left gesture to complete a sandwich order allows the cook to easily change the status of the ticket to “ready for delivery.”</p>
+            <figure class="three-imgs">
+              <img src="images/tat/pastticket.png" class="small-img" width="240px" alt="Wireframe 1">
+            </figure>
+            <p>The <span style="font-weight: 700">past ticket screen</span> allows members to look at the history of completed orders. An archived list of completed tickets is useful for organization and tracking.</p>
+            <figure class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/HJeTcN_SgZ8"></iframe>
+            </figure>
+          </div>
+          <div class="project-content-card">
+            <h2>Branding</h2>
+            <p>I kept the core of Text-a-Toasty’s brand name the same as it spoke to what the ministry does on campus.With the redesign, my goal was to keep the same friendly and welcoming feeling that TaT valued by incorporating the color of grilled cheese as the primary color along with white and black. This was a vibrant way to gain attention yet keep it friendly.</p>
+            <figure class="brand-logos">
+              <img src="images/tat/branding-1.png" class="small-img" width=600>
+              <img src="images/tat/branding-2.png" class="small-img" width=400>
+            </figure>
+            <p>In terms of the logo design, I kept it clean and plain with Helvetica Neue typography and included a bread toast in the shape of a text bubble to embody its mission of dialoguing with students.</p>
+          </div>
+          <div class="project-content-card">
+            <h2>User Testing</h2>
+            <p>After creating my hi-fidelity mockups, I conducted a user test with a couple of the members within Text-a-Toasty.</p> <p>Overall, the feedback was that they loved the redesign and the simplicity of the entire app. Some useful improvements that were suggested includes the following:</p>
+            <ul class="feedback">
+              <li>Use more explicit language for status updates like “in progress” → “out for delivery”</li>
+              <li>Keep the dialogue simple and less wordy in the text conversation examples given</li>
+              <li>Include a search browse feature for the Past Ticket screen</li>
+              <li>Ticket detail screen to have a swipe feature to include possible answers to questions asked </li>
+            </ul>
+            <br>
+            <p>Some of these suggestions are out of scope for the MVP but definitely noteworthy for future developments. All of the user tests for the MVP product were included in my final designs above.</p>
+          </div>
+          <div class="project-content-card">
+            <h2>Conclusion</h2>
+            <p>Overall, this project was unlike any other project that I have worked on. There were many aspects of this project that I had to do research on in terms of two factor authentication and chatbot AI technology. Text-a-Toasty was like the amalgamation of various app components to serve the purpose of the ministry. I understand the scope of this technology is quite large to create the MVP product for such a specific use case so the scalability of this project could be difficult. Understanding all of this, it was still a unique experience to create a solution to this existing issue for the ministry. If given more time, I would like to look into a more robust way of including chatbot SMS technology. I do believe this project could be scaled to larger companies with the bandwidth and resources to build this complex system out. Any company with a ticketing system for administrative work could use this technology. </p>
+          </div>
+        </article>
+      </section>
+          <!--End of case studies-->
+      <footer>
+        <h1>Interested in working together?</h1>
+        <h1>Let's Connect</h1>
+        <ul class="social">
+          <li>
+            <a href="https://www.linkedin.com/in/jackie-ko-77b694ba/" target="blank">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jackie.ko95@gmail.com" target="blank">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jackieko" target="blank">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="back-to-top" id="backtotop" onclick="topFunction()">
+      <img src="images/backtotop.svg">
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150206292-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150206292-1');
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
