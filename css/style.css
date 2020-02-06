@@ -595,7 +595,13 @@ i.fab, i.far {
   } */
 
   .hero {
+      height: 500px;
       margin-bottom: 0;
+  }
+
+  .hero h1{
+    font-size: 4.6rem;
+    line-height: 6.2rem;
   }
 
   .bio-intro {
@@ -666,6 +672,7 @@ i.fab, i.far {
   }
 
   .button {
+    cursor: pointer;
     margin: 3rem 0;
   }
 
