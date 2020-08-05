@@ -263,7 +263,7 @@ li.active a {
 /* End of Navigation */
 
 .hero {
-  background-image: url(../images/parallax.png);
+  /* background-image: url(../images/parallax.png); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -277,31 +277,28 @@ li.active a {
   width: 100%;
 }
 
-/* .hero h1 {
-  font-weight: 400;
-  font-size: 2.4rem;
-} */
-
+/* No longer needed
 .hero-intro{
   font-family: 'EB Garamond', serif;
   font-size: 4rem;
   font-weight: 500;
   line-height: 6rem;
-}
+} */
 
 .hero-description{
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
-  font-size:  2.8rem;
+  font-size:  2.6rem;
 }
 
 button {
   border-color: #161925;
   border-radius: 30px;
-  border-width: 2px;
+  border-width: 1px;
   background-color: transparent;
   margin: 20px 0;
   width: 250px;
-  height: 55px;
+  height: 53px;
 }
 
 button:hover{
@@ -317,10 +314,13 @@ button:hover{
   font-size: 1.8rem;
   grid-area: project;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .project-hero-image {
-  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1800px;
 }
 
 .hero-project h1 {
@@ -334,22 +334,24 @@ button:hover{
   text-align: center;
 }
 
-.project-info {
+.project-info, .project-info-right {
   display: none;
 }
 
 .project-image img {
+  height: auto;
   margin: 0 auto;
-  max-height: 700px;
+  max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-  padding: 2rem;
   width: auto;
 }
 
 .project-content-wrapper {
   grid-area: content;
-  margin: 2rem 0;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .project-content-card {
@@ -404,7 +406,6 @@ button:hover{
 .bio-img {
     max-width: 100%;
     width: 100%;
-    max-height: 600px;
     margin: 0px auto;
     object-fit: contain;
     padding: 2rem 0;
@@ -423,7 +424,7 @@ button:hover{
 
 .about-image {
   grid-area: image;
-  margin: 0 3rem 3rem 3rem;
+  margin: 2rem;
 }
 
 .three-imgs {
@@ -486,11 +487,11 @@ i.fab, i.far {
 
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 2% 15% 66% 15% 2%;
+    grid-template-columns: 2% 10% 76% 10% 2%;
     grid-template-areas:
       "header header header header header"
-      "hero hero hero hero hero"
-      ". projects projects projects ."
+      ". . hero . ."
+      ". . projects . ."
       "footer footer footer footer footer";
   }
 
@@ -526,13 +527,19 @@ i.fab, i.far {
       padding-top: 3%;
   }
 
+  .about-image {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
   .bio-intro {
+    display: text;
     margin: 2rem 11rem;
   }
 
   .hero {
-    height: 460px;
-    padding: 110px 17% 80px 17%;
+    height: 360px;
+    padding: 110px 10% 80px 10%;
     margin-bottom: 5rem;
   }
 
@@ -556,16 +563,8 @@ i.fab, i.far {
     padding: 4rem 0;
   }
 
-  .project {
-    height: 700px;
-  }
-
   .hero-project {
     height: auto;
-  }
-
-  .project-image img {
-    width: 100%;
   }
 
  .wireframe-imgs{
@@ -610,18 +609,20 @@ i.fab, i.far {
     /* text-align: right; */
   }
 
-  /* .about-container {
+  .about-container {
     display: grid;
-    grid-template-columns: 10% 30% 3% 40% 17%;
+    grid-template-columns: 7% 20% auto 20% 7%;
     grid-template-areas:
       "header header header header header"
-      ". image . bio ."
+      ". . image . ."
+      ". . bio . ."
       "footer footer footer footer footer";
-  } */
+  }
 
   .hero {
-      height: 530px;
+      height: 520px;
       margin-bottom: 0;
+      padding: 100px 10%;
   }
 
   /* .hero h1{
@@ -636,24 +637,28 @@ i.fab, i.far {
 
   .hero-description {
     font-weight: 400;
-    font-size: 4rem;
-    line-height: 5.5rem;
+    font-size: 5.8rem;
+    line-height: 7.4rem;
+  }
+
+  .about-image {
+    margin: auto;
   }
 
   .bio-intro {
-    margin: 6rem;
-    display: inline;
+    margin: auto;
+    padding-top: 30px;
   }
 
   .bio-text {
-    padding: 0 100px 0 120px;
+    justify-content: center;
+    max-width: 840px;
   }
 
   .bio-img {
-    margin: 0 8rem 3rem 6rem;
-    float: left;
-    display: inline;
-    width: auto;
+    justify-content: center;
+    max-width: 960px;
+    width: 100%;
   }
 
   .nav-bar {
@@ -683,37 +688,55 @@ i.fab, i.far {
 
   .project {
     display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
   }
 
   .project-image {
     display: block;
     height: 100%;
+    min-width: 680px;
+    max-width: 900px;
     width: auto;
   }
 
   .project-info {
     display: block;
     height: 100%;
-    line-height: 3.8rem;
-    max-width: 700px;
-    padding: 10% 0 10% 14%;
+    text-align: right;
+    line-height: 3rem;
+    margin-top: 4rem;
+    max-width: 500px;
+    min-width: 420px;
+    padding-right: 80px;
     position: relative;
     width: auto;
   }
 
-  .project-info h2 {
-    font-size: 5rem;
-    line-height: 10rem;
-    padding: 1rem 0;
+  .project-info-right {
+    display: block;
+    height: 100%;
+    line-height: 3rem;
+    margin-top: 4rem;
+    max-width: 500px;
+    min-width: 420px;
+    padding-left: 80px;
+    width: 50%;
+    position: relative;
+  }
+
+  .project-info h2, .project-info-right h2 {
+    font-size: 4.6rem;
+    padding: 3rem 0;
   }
 
   .button {
     cursor: pointer;
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   .button a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
   }
