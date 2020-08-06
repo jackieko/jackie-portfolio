@@ -345,6 +345,12 @@ button:hover{
   max-width: 100%;
   object-fit: contain;
   width: auto;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.project-image img:hover {
+  transform: scale(1.03);
 }
 
 .project-content-wrapper {
@@ -695,8 +701,10 @@ i.fab, i.far {
   .project-image {
     display: block;
     height: 100%;
+    max-height: 629px;
     min-width: 680px;
     max-width: 900px;
+    overflow: hidden;
     width: auto;
   }
 
